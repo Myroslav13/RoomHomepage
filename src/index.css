@@ -143,3 +143,32 @@ button:hover {
 .mid-devices-buttons {
   padding-right: 12px;
 }
+
+/*@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    background-color: white;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navbar .nav-link {
+    color: black !important;
+    font-weight: bold;
+  }
+}*/
+
+.modal-content {
+  border: none;
+  border-radius: 0px;
+}
+
+.btn-close:hover {
+  border: none !important;
+  background-color: white !important;
+}
