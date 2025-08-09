@@ -1,48 +1,48 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Footer from './Components/Footer'
+import HeadingDiscover from './Components/HeadingDiscover'
+import HeadingAvailable from './Components/HeadingAvailable'
+import HeadingManufactured from './Components/HeadingManufactured'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      Home
-      Shop
-      About
-      Contact
+      <nav className="navbar navbar-expand-lg position-absolute navbar-dark p-lg-5 w-50 justify-content-center justify-content-lg-start">
+        <div className="container-fluid gap-md-5 p-0">
+          <button className="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
 
-      Discover innovative ways to decorate
+          <img src="./images/logo.svg"></img>
 
-      We provide unmatched quality, comfort, and style for property owners across the country. 
-      Our experts combine form and function in bringing your vision to life. Create a room in your 
-      own style with our collection and make your property a reflection of you and what you love.
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <a className="nav-link text-white" href="#">Home</a>
+              </li>
+              <li className="nav-item ps-3">
+                <a className="nav-link text-white" href="#">Shop</a>
+              </li>
+              <li className="nav-item ps-3">
+                <a className="nav-link text-white" href="#">About</a>
+              </li>
+              <li className="nav-item ps-3">
+                <a className="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-      Shop now
-
-      We are available all across the globe
-
-      With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-      Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-      store locator. Any questions? Don't hesitate to contact us today.
-
-      Shop now
-
-      Manufactured with the best materials
-
-      Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-      to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-      experience in this industry, we understand what customers want for their home and office.
-
-      Shop now
-
-      About our furniture
-
-      Our multifunctional collection blends design and function to suit your individual taste.
-      Make each room unique, or pick a cohesive theme that best express your interests and what
-      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-      or anything in between. Product specialists are available to help you create your dream space.
+      <div>
+        {count === 0 ? <HeadingDiscover setCount={setCount} count={count}></HeadingDiscover>: <></>}
+        {count === 1 ? <HeadingAvailable setCount={setCount} count={count}></HeadingAvailable>: <></>}
+        {count === 2 ? <HeadingManufactured setCount={setCount} count={count}></HeadingManufactured>: <></>}
+        <Footer></Footer>
+      </div>
     </>
   )
 }

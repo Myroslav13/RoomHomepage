@@ -66,3 +66,80 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+p {
+  color: gray;
+  font-size: 0.8em;
+}
+
+button {
+  letter-spacing: 8px;
+  background-color: transparent;
+  padding: 20px 24px;
+}
+
+button:hover {
+  border: 1px solid gray;
+  background-color: gray !important;
+}
+
+.div-footer h1 {
+  letter-spacing: 6px;
+}
+
+.button-shop {
+  padding-left: 0px;
+}
+
+.button-shop:hover {
+  border: 1px solid transparent;
+  background-color: white !important;
+}
+
+.div-footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-h1 {
+  font-size: 0.8em !important;
+}
+
+@media (min-width: 768px) {
+  .div-footer img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .left-side-img {
+    width: 100%;
+  }
+
+  .footer-h1 {
+    font-size: 1em !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .div-footer img {
+    max-width: 360px;
+    max-height: 205px;
+  }
+
+  .div-heading img {
+    max-width: 730px;
+  }
+
+  .footer-h1 {
+    font-size: 1em !important;
+  }
+}
+
+.navbar {
+  z-index: 1;
+}
+
+.mid-devices-buttons {
+  padding-right: 12px;
+}
