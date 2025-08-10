@@ -94,6 +94,7 @@ button:hover {
 .button-shop:hover {
   border: 1px solid transparent;
   background-color: white !important;
+  color: gray;
 }
 
 .div-footer img {
@@ -105,7 +106,31 @@ button:hover {
   font-size: 0.8em !important;
 }
 
-@media (min-width: 768px) {
+.navbar {
+  z-index: 1;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0px;
+}
+
+.btn-close:hover {
+  border: none !important;
+  background-color: white !important;
+}
+
+.div-text {
+  margin-left: 0px;
+}
+
+@media (max-width: 1200px) {
+  .mid-devices-buttons {
+    padding-right: 12px;
+  }
+}
+
+@media (min-width: 992px) {
   .div-footer img {
     max-width: 280px;
   }
@@ -119,6 +144,10 @@ button:hover {
   .footer-h1 {
     font-size: 1em !important;
   }
+
+  .button-shop {
+    margin-bottom: 36px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -128,47 +157,27 @@ button:hover {
   }
 
   .div-heading img {
-    max-width: 730px;
+    max-width: 687px;
   }
 
   .footer-h1 {
     font-size: 1em !important;
   }
+
+  .div-text {
+    margin-left: -50px;
+  }
 }
 
-.navbar {
-  z-index: 1;
-}
-
-.mid-devices-buttons {
-  padding-right: 12px;
-}
-
-/*@media (max-width: 991.98px) {
-  .navbar .navbar-collapse {
-    background-color: white;
-    padding: 0.5rem;
-    position: absolute;
-    top: 0;
+@media (max-width: 576px) {
+  button {
+    letter-spacing: 8px;
+    background-color: transparent;
+    padding: 8px 16px 10px 16px;
   }
 
-  .navbar .navbar-nav {
-    flex-direction: row;
-    justify-content: flex-end;
+  button.bg-black img {
+    width: 8px;
+    padding: 0px;
   }
-
-  .navbar .nav-link {
-    color: black !important;
-    font-weight: bold;
-  }
-}*/
-
-.modal-content {
-  border: none;
-  border-radius: 0px;
-}
-
-.btn-close:hover {
-  border: none !important;
-  background-color: white !important;
 }

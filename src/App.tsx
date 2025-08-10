@@ -26,7 +26,7 @@ function App() {
     <>
       {(menuClick === true && windowWidth < 992) ? 
       <>
-        <div className="modal show d-flex flex-column text-lowercase fw-bold justify-content-center" style={{ height: "100px",  backgroundColor: "white"}} tabIndex={-1} >
+        <div className="modal show d-flex flex-column text-lowercase fw-bold justify-content-center" style={{ height: "100px",  backgroundColor: "white"}} tabIndex={-1}>
           <div className="d-flex justify-content-between px-5">
             <button type="button" className="btn-close me-3" data-bs-dismiss="modal" aria-label="Close" onClick={() => setMenuClick(false)}></button>
 
@@ -48,14 +48,15 @@ function App() {
         <div className="container-fluid gap-md-5 p-0">
           {(menuClick === false && window.innerWidth < 992) ?
             <>
-              <button className="navbar-toggler border border-0" type="button" onClick={() => setMenuClick(true)} aria-label="Toggle navigation" >
+              <button className="navbar-toggler border border-0" type="button" onClick={() => setMenuClick(true)} aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <img src="./images/logo.svg"></img>
             </>
             :
             <></>
           }
+
+          <img src="./images/logo.svg"></img>
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">

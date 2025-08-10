@@ -1,7 +1,7 @@
 function Footer() {
 
   return (
-    <div className="d-lg-flex div-footer gap-5 align-items-center">
+    <div className="d-lg-flex div-footer gap-5">
         <img src="images/image-about-dark.jpg" className="img-fluid" alt="image about dark"></img>
         
         <div className="text-start align-self-center py-4 p-lg-0">
